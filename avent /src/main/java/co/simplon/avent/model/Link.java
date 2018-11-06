@@ -8,6 +8,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 
@@ -25,7 +26,7 @@ public class Link {
 	private Topic topic;
 	private LocalDate date;
 	
-	
+	@ManyToOne
 	private User user;
 	
 	public Long getId() {
